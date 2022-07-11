@@ -1,0 +1,16 @@
+# package requirements for PCFA
+torch==1.7.1
+torchvision==0.8.2
+matplotlib
+opencv-python
+tqdm
+mlflow
+
+# Additional packages for flow_library:
+--requirement=../flow_library/requirements.txt
+
+# For GMA
+einops
+
+# For PWCNet
+spatial-correlation-sampler
