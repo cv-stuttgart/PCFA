@@ -3,9 +3,9 @@ This repository contains the source code for our paper
 
 > **A Perturbation Constrained Adversarial Attack for Evaluating the Robustness of Optical Flow**,<br>
 > J. Schmalfuss, P. Scholze and A. Bruhn<br>
-> 2022,
+> European Conference on Computer Vision (ECCV), 2022.
 
-which is accepted at ECCV 2022. Also refer to our [preprint](https://arxiv.org/abs/2203.13214) for details on the method.
+Also refer to our [preprint](https://arxiv.org/abs/2203.13214) for details on the method.
 
 
 # Initial setup
@@ -238,7 +238,7 @@ The framework is built such that custom (PyTorch) models can be included. To add
 			# mandatory: perform forward pass
 			flow = model(model_input)
 		```
-	- `postprocess_flow()`: Rescale the spatial dimension of the output `flow`, such that they coincide with the original image dimensions. If you used the padder class during preprocessing it will be automatically reused here.
+	- [`postprocess_flow()`](helper_functions/ownutilities.py#L283): Rescale the spatial dimension of the output `flow`, such that they coincide with the original image dimensions. If you used the padder class during preprocessing it will be automatically reused here.
 
 4. Add your model to the possible choices for `--net` in [`helper_functions/parsing_file.py`](helper_functions/parsing_file.py#L16) (i.e. `[... | your_model]`)
 
