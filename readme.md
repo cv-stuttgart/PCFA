@@ -1,7 +1,7 @@
-# Perturbation Constrained Flow Attack (PCFA)
+# Perturbation-Constrained Flow Attack (PCFA)
 This repository contains the source code for our paper
 
-> **A Perturbation Constrained Adversarial Attack for Evaluating the Robustness of Optical Flow**,<br>
+> **A Perturbation-Constrained Adversarial Attack for Evaluating the Robustness of Optical Flow**,<br>
 > J. Schmalfuss, P. Scholze and A. Bruhn<br>
 > European Conference on Computer Vision (ECCV), 2022.
 
@@ -252,8 +252,8 @@ The models provided under [`models/`](models/) are supposed to help recreate the
 
 - [*RAFT*](https://github.com/princeton-vl/RAFT)
 - [*GMA*](https://github.com/zacjiang/GMA.git)
-- [*SpyNet*](https://github.com/sniklaus/pytorch-spynet.git) and [Flow Attack](https://github.com/anuragranj/flowattack.git)
-- [*PWC-Net*](https://github.com/NVlabs/PWC-Net.git) and [Flow Attack](https://github.com/anuragranj/flowattack.git)
+- [*SpyNet*](https://github.com/sniklaus/pytorch-spynet.git)
+- [*PWC-Net*](https://github.com/NVlabs/PWC-Net.git)
 - [*FlowNet*](https://github.com/NVIDIA/flownet2-pytorch.git)
 
 ## Additional code
