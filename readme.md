@@ -7,6 +7,14 @@ This repository contains the source code for our paper
 
 Also refer to our [preprint](https://arxiv.org/abs/2203.13214) for details on the method.
 
+## Numeric values for Quality-Robustness analysis (Fig. 7)
+
+| Method                              |  FlowNet2 | SpyNet  | PWCNet  | RAFT    | GMA     |
+| ------------------------------------|  --------:|--------:|--------:|--------:|--------:|
+| Adversarial Robustness KITTI15      |  20.84    | 9.61    | 20.26   | 27.75   | 25.48   |
+| Adversarial Robustness Sintel       |  17.67    | 12.24   | 16.53   | 19.29   | 22.91   | 
+
+
 
 # Initial setup
 
