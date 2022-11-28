@@ -1,9 +1,19 @@
 # Perturbation-Constrained Flow Attack (PCFA)
-This repository contains the source code for our paper
+This repository contains the source code for our ECCV 2022 paper **A Perturbation-Constrained Adversarial Attack for Evaluating the Robustness of Optical Flow** by J. Schmalfuss, P. Scholze and A. Bruhn.
+If you find this work useful, please cite us as
 
-> **A Perturbation-Constrained Adversarial Attack for Evaluating the Robustness of Optical Flow**,<br>
-> J. Schmalfuss, P. Scholze and A. Bruhn<br>
-> European Conference on Computer Vision (ECCV), 2022.
+> @InProceedings{Schmalfuss2022PCFA,<br>
+> title     = {A Perturbation-Constrained Adversarial Attack for Evaluating the Robustness of Optical Flow},<br>
+> author    = {Schmalfuss, Jenny and Scholze, Philipp and Bruhn, Andrés},<br>
+> year      = {2022},<br>
+> booktitle = {Proc. European Conference on Computer Vision (ECCV)},<br>
+> publisher = {Springer},<br>
+> pages     = {183--200}<br>
+> }
+
+## Abstract
+
+Recent optical flow methods are almost exclusively judged in terms of accuracy, while their robustness is often neglected. Although adversarial attacks offer a useful tool to perform such an analysis, current attacks on optical flow methods focus on real-world attacking scenarios rather than a worst case robustness assessment. Hence, in this work, we propose a novel adversarial attack - the Perturbation-Constrained Flow Attack (PCFA) – that emphasizes destructivity over applicability as a real-world attack. PCFA is a global attack that optimizes adversarial perturbations to shift the predicted flow towards a specified target flow, while keeping the L2 norm of the perturbation below a chosen bound. Our experiments demonstrate PCFA’s applicability in white- and black-box settings, and show it finds stronger adversarial samples than previous attacks. Based on these strong samples, we provide the first joint ranking of optical flow methods considering both prediction quality and adversarial robustness, which reveals state-of-the-art methods to be particularly vulnerable.
 
 Also refer to our [preprint](https://arxiv.org/abs/2203.13214) for details on the method.
 
