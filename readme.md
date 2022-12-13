@@ -154,6 +154,21 @@ To specify the datasets and handle how much output is produced, the following ar
 --no_save                             | Setting this option prevents any but the most important output
 ```
 
+### Evaluating the Provided Universal Perturbations (Paper Reproducibility)
+
+To reproduce the black-box results (Tab. 4, Supp. Mat. Tab. A4), the best trained universal perturbations are provided for each network.
+They are in the folder `universal_perturbations`.
+To evaluate the effectiveness of a universal perturbation on a new network, specify the universal perturbation as `.npy` file via the `--perturbation_sourcefolder` argument, and make sure that `--origin_net` and `--dataset` match the universal perturbation. 
+
+E.g., to test FlowNet2 with the universal perturbation trained for SpyNet on Kitti15, which is located at `universal_perturbations/SpyNet_Kitti15.npy`, make sure to specify `--origin_net=SpyNet` and `--dataset=Kitti15`, and execute:
+
+```
+python3 evaluate_PCFA.py --net=FlowNet2 --dataset=Kitti15 --dataset_stage=evaluation --origin_net=SpyNet --perturbation_sourcefolder=universal_perturbations/SpyNet_Kitti15.npy --joint_perturbation --universal_perturbation
+```
+
+The universal perturbations for Sintel are generated for Sintel final (`--dataset=Sintel --dstype=final`).
+
+
 ## Training and Evaluating (I-)FGSM perturbations
 
 Additionally, we provide a training routine that can generate FGSM perturbations (image specific only).
